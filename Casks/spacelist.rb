@@ -3,25 +3,22 @@ cask "spacelist" do
   name "spacelist"
   desc "A beautiful terminal UI for viewing all windows across your Aerospace window manager spaces"
   homepage "https://github.com/magicmark/spacelist"
-  version "0.3.0"
+  version "0.4.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "spacelist"
-  depends_on formula: [
-      "aerospace",
-    ]
 
   on_macos do
     on_intel do
       url "https://github.com/magicmark/spacelist/releases/download/v#{version}/spacelist_#{version}_darwin_amd64.tar.gz"
-      sha256 "16374c28e136800a683aa03db2e86833682a5fb0a54a4c0b5881b263bf644323"
+      sha256 "502bfd4d76a035c0a30e09650761d5bb7f480c3f49c10e9dfbb296fb3383bee1"
     end
     on_arm do
       url "https://github.com/magicmark/spacelist/releases/download/v#{version}/spacelist_#{version}_darwin_arm64.tar.gz"
-      sha256 "b8228d5be81e109a53f52e89d32aaf5e07f681f4ad141f224bd3c80cc9a1521c"
+      sha256 "ec2894f317f9b1a388fd97e05881577fe96dfc3439ca9880861d9714eb6fa5cb"
     end
   end
 
